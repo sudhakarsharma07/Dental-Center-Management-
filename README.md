@@ -6,7 +6,7 @@ A modern, fully responsive dental clinic management system built with React. Thi
 
 ## 🚀 Live Demo
 
-🌐 [View Live App](https://your-live-demo-link.com)
+🌐 [View Live App](https://dental-center-management-zeta.vercel.app/login)
 
 ---
 
@@ -106,7 +106,11 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ## 📸 Screenshots
 
-> Add your project screenshots here (Dashboard, Patient Profile, etc.)
+
+> ![{B9814F93-C754-4E33-8A1A-CED616DF2CC2}](https://github.com/user-attachments/assets/f58b6a0c-0318-4005-ab44-304a233335cc)
+> ![{2910F563-F1D7-489E-AFFB-7224F45A2696}](https://github.com/user-attachments/assets/1097923e-ed5b-4573-8a63-3a2c4860782b)
+
+
 
 ---
 
