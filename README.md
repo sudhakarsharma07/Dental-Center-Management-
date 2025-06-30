@@ -118,6 +118,13 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 Thanks to [ENTNT](https://entnt.in) for the technical challenge and concept inspiration.
 
+
+---
+##📇 Contacts
+Email ID: sudhakar881032@gmail.com
+
+
+
 ---
 
 ## 📄 License
