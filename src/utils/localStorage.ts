@@ -99,7 +99,7 @@ const initializeMockData = () => {
         description: 'Annual dental examination and cleaning',
         comments: 'Patient advised regular flossing',
         appointmentDate: '2025-08-10T10:30:00Z',
-        status: 'Completed',
+        status: 'Scheduled',
         files: [],
         createdAt: '2025-01-15T11:00:00Z',
         updatedAt: '2025-08-10T12:00:00Z'
@@ -111,7 +111,7 @@ const initializeMockData = () => {
         description: 'Treated cavity on upper right molar with composite filling',
         comments: 'Next check-up in 3 months',
         appointmentDate: '2025-02-01T09:00:00Z',
-        status: 'Completed',
+        status: 'Scheduled',
         files: [],
         createdAt: '2025-01-20T15:30:00Z',
         updatedAt: '2025-02-01T10:15:00Z'
