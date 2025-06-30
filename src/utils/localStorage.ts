@@ -10,29 +10,30 @@ const STORAGE_KEYS = {
 const initializeMockData = () => {
   if (!localStorage.getItem(STORAGE_KEYS.USERS)) {
     const mockUsers: User[] = [
-      { 
-        id: '1', 
-        role: 'Admin', 
-        email: 'admin@entnt.in', 
+      {
+        id: '1',
+        role: 'Admin',
+        email: 'admin@entnt.in',
         password: 'admin123',
-        name: 'Dr. Sarah Wilson'
+        name: 'David Lee'
       },
-      { 
-        id: '2', 
-        role: 'Patient', 
-        email: 'john@entnt.in', 
-        password: 'patient123', 
+      {
+        id: '2',
+        role: 'Patient',
+        email: 'john@entnt.in',
+        password: 'patient123',
         patientId: 'p1',
         name: 'John Doe'
       },
-      { 
-        id: '3', 
-        role: 'Patient', 
-        email: 'jane@entnt.in', 
-        password: 'patient123', 
+      {
+        id: '2',
+        role: 'Patient',
+        email: 'emily@entnt.in',
+        password: 'patient789',
         patientId: 'p2',
-        name: 'Jane Smith'
+        name: 'Emily Johnson'
       }
+
     ];
     localStorage.setItem(STORAGE_KEYS.USERS, JSON.stringify(mockUsers));
   }
@@ -40,6 +41,8 @@ const initializeMockData = () => {
   if (!localStorage.getItem(STORAGE_KEYS.PATIENTS)) {
     const mockPatients: Patient[] = [
       {
+
+
         id: 'p1',
         name: 'John Doe',
         dob: '1990-05-10',
@@ -47,24 +50,25 @@ const initializeMockData = () => {
         email: 'john@entnt.in',
         address: '123 Main St, City, State 12345',
         emergencyContact: '0987654321',
-        healthInfo: 'No major health issues',
+        healthInfo: 'No allergies',
         allergies: 'None',
         medications: 'None',
-        createdAt: '2024-01-15T10:00:00Z'
+        createdAt: '2025-04-10T11:00:00Z'
       },
       {
-        id: 'p2',
-        name: 'Jane Smith',
-        dob: '1985-08-22',
-        contact: '2345678901',
-        email: 'jane@entnt.in',
-        address: '456 Oak Ave, City, State 12345',
-        emergencyContact: '1098765432',
-        healthInfo: 'Hypertension controlled with medication',
-        allergies: 'Penicillin',
-        medications: 'Lisinopril 10mg daily',
-        createdAt: '2024-02-01T14:30:00Z'
+        id: 'p4',
+        name: 'Emily Johnson',
+        dob: '1992-11-05',
+        contact: '8765432109',
+        email: 'emily@entnt.in',
+        address: '321 Maple St, Townsville, State 54321',
+        emergencyContact: '1122334455',
+        healthInfo: 'Asthma, uses inhaler occasionally',
+        allergies: 'Dust, pollen',
+        medications: 'Albuterol inhaler as needed',
+        createdAt: '2025-03-22T16:45:00Z'
       }
+
     ];
     localStorage.setItem(STORAGE_KEYS.PATIENTS, JSON.stringify(mockPatients));
   }
@@ -72,43 +76,47 @@ const initializeMockData = () => {
   if (!localStorage.getItem(STORAGE_KEYS.INCIDENTS)) {
     const mockIncidents: Incident[] = [
       {
-        id: 'i1',
-        patientId: 'p1',
-        title: 'Routine Cleaning',
-        description: 'Regular dental cleaning and examination',
-        comments: 'Patient shows good oral hygiene',
-        appointmentDate: '2025-01-15T10:00:00Z',
-        cost: 120,
-        treatment: 'Professional cleaning, fluoride treatment',
-        status: 'Completed',
+
+        id: "i1",
+        patientId: "p1",
+        title: "Toothache",
+        description: "Upper molar pain",
+        comments: "Sensitive to cold",
+        appointmentDate: "2025-07-01T10:00:00",
+        cost: 80,
+        treatment: 'Tooth extraction, pain management',
+        status: "Completed",
+
         files: [],
-        createdAt: '2024-12-20T10:00:00Z',
-        updatedAt: '2025-01-15T11:00:00Z'
+        createdAt: '2025-06-01T14:20:00Z',
+        updatedAt: '2025-06-10T16:00:00Z'
+
       },
       {
         id: 'i2',
         patientId: 'p1',
-        title: 'Follow-up Examination',
-        description: 'Follow-up after cleaning',
-        comments: 'Schedule for 6 months',
-        appointmentDate: '2025-07-15T14:00:00Z',
-        status: 'Scheduled',
+        title: 'Routine Dental Checkup',
+        description: 'Annual dental examination and cleaning',
+        comments: 'Patient advised regular flossing',
+        appointmentDate: '2025-08-10T10:30:00Z',
+        status: 'Completed',
         files: [],
         createdAt: '2025-01-15T11:00:00Z',
-        updatedAt: '2025-01-15T11:00:00Z'
+        updatedAt: '2025-08-10T12:00:00Z'
       },
       {
         id: 'i3',
         patientId: 'p2',
-        title: 'Tooth Pain Consultation',
-        description: 'Patient experiencing pain in upper right molar',
-        comments: 'Sensitive to cold and hot foods',
+        title: 'Cavity Treatment - Molar',
+        description: 'Treated cavity on upper right molar with composite filling',
+        comments: 'Next check-up in 3 months',
         appointmentDate: '2025-02-01T09:00:00Z',
-        status: 'Scheduled',
+        status: 'Completed',
         files: [],
         createdAt: '2025-01-20T15:30:00Z',
-        updatedAt: '2025-01-20T15:30:00Z'
+        updatedAt: '2025-02-01T10:15:00Z'
       }
+
     ];
     localStorage.setItem(STORAGE_KEYS.INCIDENTS, JSON.stringify(mockIncidents));
   }
